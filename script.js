@@ -238,7 +238,7 @@
     const drift = () => {
       const r = footImg.parentElement.getBoundingClientRect();
       const p = Math.min(1, Math.max(0, 1 - r.top / window.innerHeight));
-      footImg.style.transform = 'scale(' + (1.35 - 0.12 * p).toFixed(3) + ')';
+      footImg.style.transform = 'scale(' + (1.12 - 0.1 * p).toFixed(3) + ')';
     };
     window.addEventListener('scroll', () => requestAnimationFrame(drift), { passive: true });
     drift();
@@ -276,11 +276,11 @@
         body: JSON.stringify(payload)
       });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
-      label.textContent = 'Заявка отправлена. Азиз скоро свяжется';
+      label.textContent = 'Заявка отправлена, Азиз скоро свяжется';
       form.reset();
     } catch (err) {
       console.error(err);
-      label.textContent = 'Ошибка. Напишите в Telegram';
+      label.textContent = 'Ошибка, напишите в Telegram';
     } finally {
       setTimeout(() => { label.textContent = orig; btn.disabled = false; }, 3500);
     }
