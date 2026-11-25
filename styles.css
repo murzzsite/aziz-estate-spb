@@ -325,3 +325,7 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.2)}
   .btn::before,.link,.nav a::after{transition:none}
   .acc details p{animation:none}
 }
+
+.agree{display:flex;gap:12px;align-items:flex-start;font-size:var(--s-small);color:var(--muted);line-height:1.45}
+.agree input{width:22px;height:22px;margin:1px 0 0;flex:none;accent-color:var(--ink)}
+.agree a{color:var(--ink)}

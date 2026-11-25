@@ -3,13 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Азиз — брокер новостроек и риелтор в Петербурге</title>
-<meta name="description" content="Квартира в новостройке Петербурга без комиссии: подбор у всех застройщиков, бесплатное одобрение ипотеки, показы на личном авто. Продажа вторички от 2 %.">
-<meta name="theme-color" content="#f1f4f6">
-<meta property="og:title" content="Азиз: квартира в Петербурге без комиссии">
-<meta property="og:description" content="Новостройки, дома и ипотека бесплатно, платит застройщик. Продажа вторички: 2–3 %, от 150 000 ₽.">
+<title>Азиз: брокер новостроек и риелтор в Санкт-Петербурге</title>
+<meta name="description" content="Брокер по новостройкам и риелтор в Петербурге: подбор квартиры у застройщиков без комиссии, бесплатная ипотека, вторичка и дома, расчет платежа.">
+<link rel="canonical" href="https://murzzsite.github.io/aziz-estate-spb/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Азиз, брокер новостроек и риелтор в Петербурге">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/disconnect.jpg">
+<meta property="og:url" content="https://murzzsite.github.io/aziz-estate-spb/">
+<meta property="og:title" content="Азиз: квартира в Петербурге без комиссии">
+<meta property="og:description" content="Новостройки, дома и ипотека бесплатно, платит застройщик. Продажа и поиск вторички. Расчет платежа на сайте.">
+<meta property="og:image" content="https://murzzsite.github.io/aziz-estate-spb/assets/disconnect.jpg">
+<meta property="og:image:alt" content="Разведенный Дворцовый мост в Петербурге ночью">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Азиз: квартира в Петербурге без комиссии">
+<meta name="twitter:description" content="Новостройки, дома и ипотека бесплатно, платит застройщик. Продажа и поиск вторички. Расчет платежа на сайте.">
+<meta name="twitter:image" content="https://murzzsite.github.io/aziz-estate-spb/assets/disconnect.jpg">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://murzzsite.github.io/aziz-estate-spb/#website",
+   "url": "https://murzzsite.github.io/aziz-estate-spb/",
+   "name": "Азиз, брокер новостроек и риелтор в Петербурге",
+   "inLanguage": "ru-RU"
+  },
+  {
+   "@type": "RealEstateAgent",
+   "@id": "https://murzzsite.github.io/aziz-estate-spb/#agent",
+   "name": "Азиз",
+   "description": "Брокер по новостройкам и риелтор в Санкт-Петербурге: подбор новостроек у застройщиков, вторичка, дома, помощь с одобрением ипотеки.",
+   "url": "https://murzzsite.github.io/aziz-estate-spb/",
+   "image": "https://murzzsite.github.io/aziz-estate-spb/assets/disconnect.jpg",
+   "telephone": "+7 911 838-96-50",
+   "email": "agentekspert@ya.ru",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "набережная реки Мойки, д. 36, оф. А200",
+    "addressLocality": "Санкт-Петербург",
+    "addressCountry": "RU"
+   },
+   "areaServed": [
+    "Санкт-Петербург",
+    "Ленинградская область"
+   ],
+   "sameAs": [
+    "https://t.me/aziz_peterburg",
+    "https://t.me/aziz_estate",
+    "https://aziz.toprealtors.ru"
+   ]
+  }
+ ]
+}</script>
+<meta name="theme-color" content="#f1f4f6">
 <script>document.documentElement.className='js';</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,9 +208,9 @@
       </div>
 
       <div class="res" aria-live="polite">
-        <p class="res__main"><span class="res__label">Платеж в месяц</span><span class="res__big" id="r-pay">—</span></p>
-        <p class="res__row"><span>Ставка на пункт ниже дает</span><b id="r-diff">—</b></p>
-        <p class="res__row"><span>Услуга Азиза</span><b id="r-fee">—</b></p>
+        <p class="res__main"><span class="res__label">Платеж в месяц</span><span class="res__big" id="r-pay">-</span></p>
+        <p class="res__row"><span>Ставка на пункт ниже дает</span><b id="r-diff">-</b></p>
+        <p class="res__row"><span>Услуга Азиза</span><b id="r-fee">-</b></p>
       </div>
     </form>
   </div>
@@ -282,7 +329,7 @@
       <label class="fld"><span>Бюджет или цена квартиры (необязательно)</span><input type="text" name="budget" placeholder="например, 12 млн"></label>
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <button class="btn btn--block" type="submit"><span class="btn__t">Отправить заявку</span></button>
-      <p class="consent">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+      <label class="agree"><input type="checkbox" name="consent" value="yes" required><span>Согласен(на) на обработку персональных данных по <a href="privacy.html" target="_blank" rel="noopener">политике конфиденциальности</a></span></label>
     </form>
   </div>
 </section>
@@ -324,5 +371,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="cookie.js" defer data-ink="#0f1e29" data-accent="#e8b23a" data-on-accent="#0f1e29"></script>
 </body>
 </html>

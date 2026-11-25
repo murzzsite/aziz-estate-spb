@@ -263,8 +263,10 @@
     if (phoneDigits.length < 11 && !(payload.telegram || '').trim()) { form.elements.phone.classList.add('bad'); bad = true; }
     if (bad) { label.textContent = 'Укажите имя и телефон'; setTimeout(() => { label.textContent = orig; }, 2500); return; }
 
+    if (!form.elements.consent || !form.elements.consent.checked) { label.textContent = 'Отметьте согласие с политикой'; setTimeout(() => { label.textContent = orig; }, 2500); return; }
+    delete payload.consent;
     payload.contact = payload.phone || payload.telegram;
-    payload.comment = 'Цель: ' + (payload.goal || '—') + (payload.budget ? '; бюджет: ' + payload.budget : '') + (payload.telegram ? '; Telegram: ' + payload.telegram : '');
+    payload.comment = 'Цель: ' + (payload.goal || '-') + (payload.budget ? '; бюджет: ' + payload.budget : '') + (payload.telegram ? '; Telegram: ' + payload.telegram : '');
     payload.source = 'aziz-estate-spb';
 
     btn.disabled = true;
